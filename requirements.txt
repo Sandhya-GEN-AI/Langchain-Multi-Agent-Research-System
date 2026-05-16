@@ -1,0 +1,19 @@
+langchain
+langchain-groq
+langchain-core
+langchain-community
+langchain-groq
+streamlit
+
+#Tavily Search Tool
+langchain-tavily
+
+#web scrapping
+
+beautifulsoup4
+requests
+readability-lxml
+trafilatura
+lxml
+
+
