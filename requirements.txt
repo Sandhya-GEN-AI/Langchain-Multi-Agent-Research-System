@@ -16,4 +16,6 @@ readability-lxml
 trafilatura
 lxml
 
+tavily
+rich
 
