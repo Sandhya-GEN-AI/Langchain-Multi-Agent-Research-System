@@ -13,7 +13,7 @@ load_dotenv()
 
 tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
-
+@tool
 def web_search(query: str)-> str:
     """ 
     search the web for recent and reliable information on a topic . Returns Titles, URLS, and snippets."""
@@ -25,6 +25,8 @@ def web_search(query: str)-> str:
         out.append(f"Title: {r['title']}\nURL: {r['url']}\nSnippet: {r['content'][:300]}\n")
     
     return "\n\n".join(out)
+
+
 
 
 

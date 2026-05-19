@@ -1,5 +1,7 @@
-from src.tools.tools import web_search
-from src.tools.tools import scrape_url
+from src.tools.tools import scrape_url, web_search
 
-results = scrape_url.run("https://www.reddit.com/r/artificial/")
-print(results)
+
+r = web_search.invoke({"query" : "what is the latest research on  using AI for climate change mitigation"})
+
+
+print(r)
